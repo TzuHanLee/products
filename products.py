@@ -11,3 +11,8 @@ print('....................')
             
 for p in products:
 	print(p[0], '價格是', p[1])
+
+with open('products.csv', 'w') as f:
+    for p in products:
+    	f.write(p[0] + ',' + p[1] + '\n') #\n為分行符號
+    	
